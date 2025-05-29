@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, PlusIcon, Search, Settings } from "lucide-react";
+import { Home,  Search } from "lucide-react";
 import React from "react"; // Import React for React.ReactNode
 
 import {
@@ -19,7 +19,6 @@ import Libary from "./Libary";
 // Define the props interface for the AppSidebar component.
 // Changed 'songs: Song' to 'songs: Song[]' as a library typically holds multiple songs.
 interface AppSidebarProps {
-  children: React.ReactNode;
   songs: Song[]; // Now expects an array of Song objects
 }
 
@@ -39,7 +38,6 @@ const items = [
 
 
 const AppSidebar: React.FC<AppSidebarProps> = ({
-  children,
   songs
 }) => {
   return (

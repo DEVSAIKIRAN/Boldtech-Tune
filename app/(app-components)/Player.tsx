@@ -4,7 +4,7 @@ import useGetSongById from "@/hooks/useGetSongByid"
 import useLoadSong from "@/hooks/useLoadSongUrl"
 import usePlayer from "@/hooks/usePlayer"
 import PlayerContent from "./PlayerContent"
-import SongItem from "./SongItem"
+
 
 
 const Player = () => {

@@ -2,12 +2,10 @@
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
 import { RxCaretLeft, RxCaretRight} from "react-icons/rx";
-import { HiHome, HiSearch } from "react-icons/hi"
-import { Sidebar, SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 import useAuthModal from "@/hooks/useAuthModal";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useUser } from "@/hooks/useUser";
-import { Avatar } from "@/components/ui/avatar";
 import Image from "next/image";
 import { FaUserAlt } from "react-icons/fa";
 import toast from "react-hot-toast";
