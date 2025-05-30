@@ -41,7 +41,7 @@ const AppSidebar: React.FC<AppSidebarProps> = ({
   songs
 }) => {
   return (
-    <Sidebar collapsible="icon">
+    <Sidebar collapsible="icon" className="overflow-hidden">
       <SidebarContent>
         {/* Main navigation group */}
         <SidebarGroup>
