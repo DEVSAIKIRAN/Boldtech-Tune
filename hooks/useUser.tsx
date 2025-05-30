@@ -3,14 +3,13 @@ import { User } from "@supabase/auth-helpers-nextjs"
 import { useSessionContext, useUser as useSupaUser} from "@supabase/auth-helpers-react"
 import { createContext, useContext, useEffect, useState } from "react"
 
-type UserContextType = {
+interface UserContextType {
     accessToken: string | null;
     user: User | null;
-    userDetails: UserDetails
+    userDetails: UserDetails | null; // This line is crucial
     isLoading: boolean;
     subscription: Subscription | null;
 }
-
 export const UserContext = createContext<UserContextType | undefined >(
     undefined
 )

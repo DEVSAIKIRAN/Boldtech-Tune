@@ -7,6 +7,9 @@ import Player from "../(app-components)/Player";
 
 
 export default async function Home() {
+
+
+
  const songs = await getSongs()
   return (
     <div className="rounded-lg h-full w-full overflow-hidden overflow-y-auto px-2" suppressHydrationWarning>

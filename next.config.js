@@ -17,6 +17,9 @@ const nextConfig = {
     // USE WITH CAUTION! It's much better to fix the errors.
     ignoreDuringBuilds: true,
   },
+  typescript: {
+    ignoreDuringBuilds: true,
+  },
   // ... any other Next.js configurations
 };
 

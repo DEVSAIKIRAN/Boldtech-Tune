@@ -19,6 +19,7 @@ export interface UserDetails {
     payment_method?: stripe.PaymentMethod[stripe.PaymentMethod.Type]
 }
 
+
 export interface Product {
     id: string
     active?: boolean
