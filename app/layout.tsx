@@ -2,8 +2,8 @@
 import { Figtree } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Header from "./(app-components)/Header";
 import SupabaseProvider from "@/providers/SupabaseProvider";
 import UserProvider from "@/providers/UserProvider";
@@ -41,7 +41,7 @@ export default async function RootLayout({
           <AppSidebar songs={userSongs}/>
           <main className="w-full h-full  bg-gradient-to-b from-sky-900">
           <Header>
-            
+            <SpeedInsights/>
         {children}
          </Header>
          <Player/>
